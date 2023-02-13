@@ -1,0 +1,143 @@
+body{
+    background-color: white;
+}
+h1 {
+    font-family: 'Lily Script One', cursive;
+    font-size: 350%;
+    padding-top: 10px;
+}
+h2 {
+    font-family: 'Unbounded', cursive;
+    font-size: 120%;
+    padding-bottom: 10px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;  
+}
+.letraCompra {
+    text-align: center;
+    align-self: center;
+}
+@media (max-width: 260px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.entrada{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.entrada input {
+    width: 80%;
+    height: 45px;
+    font-size: 25px;
+    background-color: white;
+    background-image: url("../images/search.png");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+.botonVerCarrito {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: right;
+}
+#contenedorProductos {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.blisterProducto {
+    height: 700px;
+    width: 400px;
+    margin: 10px;
+}
+.blisterProducto .cajaImagen {
+    height: 400px;
+    width: 400px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    display:inline-flex;
+    justify-content: center;
+}
+.blisterProducto img {
+    width: 80%;
+    height: 90%;
+}
+.blisterProducto h4 {
+    padding-left: 20px;
+}
+.blisterProducto p {
+    padding-left: 15px;
+}
+.blisterProducto .cajaInfo {
+    height: 200px;
+}
+.blisterProducto #precioProducto {
+    font-size: 200%;
+    text-align: center;
+}
+.blisterProducto .cajaBoton {
+    display: flex;
+    justify-content: right;
+}
+.blisterProducto .bajoStock {
+    font-size: 120%;
+    text-align:center;
+    color:chartreuse;
+    background-color: deeppink;
+}
+.blisterProducto .stockCero {
+    font-size: 120%;
+    text-align:center;
+    color:chartreuse;
+    background-color: deeppink;
+}
+.blisterProducto button {
+    padding: 5px;
+    align-content: center;
+}
+#contenedorCarrito {
+    min-height: 200px;
+}
+#contenedorCarrito h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#contenedorCarrito p {
+    font-size: 150%;
+}
+#contenedorCarrito * {
+    margin-left: 40px;
+}
+.vistaCarrito {
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: inline-block;
+    align-content: center;
+    border-radius: 45px;
+    background: repeating-linear-gradient(45deg, white, lightpink 10px, white 5px, lightpink 10px)
+    
+}
+.listadoCarrito {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+.listadoCarrito img {
+    width: 100px;
+    height: 100px;
+}
+.sweetA {
+    font-size: 200%;
+}
