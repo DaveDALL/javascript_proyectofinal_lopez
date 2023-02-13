@@ -3,6 +3,9 @@ let productos = []
 let carritoDeCompra = []
 let total
 
+//Recuperación del Carrito de Compra y del Total de Local Storage cuando se refresca la ventana del Explorador
+(localStorage.getItem("carritoCompra")) ? (carritoDeCompra = JSON.parse(localStorage.getItem("carritoCompra")), total = JSON.parse(localStorage.getItem("total"))) : (carritoDeCompra = [], total = 0)
+
 // Se inicia llamando a la funcion para obtener datos locales de archivo json, y posteriormente ejecutar la creacion de las tarjetas
 obtenerData()
 
@@ -161,7 +164,7 @@ function ponerEnCarritoProductos (e) {
 //Funcion que crea la tarjeta del Carrito de Compra
 function crearListaCarrito ( ) {
     //Recuperación del Carrito de Compra y del Total de Local Storage cuando se refresca la ventana del Explorador
-    (localStorage.getItem("carritoCompra")) ? (carritoDeCompra = JSON.parse(localStorage.getItem("carritoCompra")), total = JSON.parse(localStorage.getItem("total"))) : (carritoDeCompra = [])
+    (localStorage.getItem("carritoCompra")) ? (carritoDeCompra = JSON.parse(localStorage.getItem("carritoCompra")), total = JSON.parse(localStorage.getItem("total"))) : (carritoDeCompra = [], total = 0)
     let visualizarCarrito = document.getElementById("contenedorPrincipal")
     document.getElementById("buscar").style.display = "none"
     document.getElementById("verCarrito").style.display = "none"
